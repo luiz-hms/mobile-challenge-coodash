@@ -1,4 +1,4 @@
-import 'package:dictionary/screens/home/Home.dart';
+import 'package:dictionary/core/presentation/screens/home/home.dart';
 import 'package:flutter/material.dart';
 
 import '../favoritos/favoritos.dart';
