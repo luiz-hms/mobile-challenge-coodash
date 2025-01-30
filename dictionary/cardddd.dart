@@ -1,20 +1,18 @@
 import 'package:flutter/material.dart';
 
-class CardCustom extends StatelessWidget {
+class WordCard extends StatelessWidget {
   final String word;
-  final Function(String) onNavigate;
-  final Function(int, bool) onToggleFavorite;
-  final IconData? icon;
-  final Function? iconAction;
-  final bool isFavorite;
+  final Function(String)
+      onNavigate; // Função para navegação para a tela de detalhes
+  final Function(int, bool)
+      onToggleFavorite; // Função para alternar o status de favorito
+  final bool isFavorite; // Indica se a palavra está favoritada ou não
 
-  CardCustom({
-    required this.isFavorite,
+  WordCard({
     required this.word,
     required this.onNavigate,
     required this.onToggleFavorite,
-    this.icon,
-    this.iconAction,
+    required this.isFavorite,
   });
 
   @override
@@ -23,11 +21,11 @@ class CardCustom extends StatelessWidget {
       elevation: 5,
       margin: EdgeInsets.all(10),
       child: ListTile(
-        contentPadding: EdgeInsets.all(2),
+        contentPadding: EdgeInsets.all(12),
         title: Text(
           word,
           style: TextStyle(
-            fontSize: 10,
+            fontSize: 18,
             fontWeight: FontWeight.bold,
           ),
         ),
