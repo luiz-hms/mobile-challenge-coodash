@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'screens/layout/layoutPage.dart';
+import 'core/presentation/screens/layout/layoutPage.dart';
 
 void main() {
   runApp(const MyApp());
