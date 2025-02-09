@@ -50,7 +50,10 @@ class _HistoricoState extends State<Historico> {
                       color: Colors.redAccent,
                     ),
                     onPressed: () => {
-                      {_palavraRepository.updatePalavra('favoritos', true)},
+                      {
+                        _palavraRepository.updatePalavra(
+                            'favoritos', !palavras[index].favorito)
+                      },
                     },
                   ),
                   onTap: () {
