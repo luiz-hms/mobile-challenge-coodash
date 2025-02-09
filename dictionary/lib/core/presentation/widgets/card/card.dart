@@ -21,12 +21,12 @@ class CardCustom extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       elevation: 5,
-      margin: EdgeInsets.all(10),
+      margin: const EdgeInsets.all(10),
       child: ListTile(
-        contentPadding: EdgeInsets.all(2),
+        contentPadding: const EdgeInsets.all(2),
         title: Text(
           word,
-          style: TextStyle(
+          style: const TextStyle(
             fontSize: 10,
             fontWeight: FontWeight.bold,
           ),

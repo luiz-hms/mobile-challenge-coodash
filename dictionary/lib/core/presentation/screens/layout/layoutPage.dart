@@ -43,7 +43,7 @@ class _LayoutPageState extends State<LayoutPage> {
         onTap: _onItemTapped,
       ),
       body: Center(
-        child: _pages.elementAt(_selectedIndex), //New
+        child: _pages.elementAt(_selectedIndex),
       ),
     );
   }
